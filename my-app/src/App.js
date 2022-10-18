@@ -1,21 +1,16 @@
 import './App.css';
 import HelloWorld from './components/HelloWorld';
+import Frase from './components/Frase';
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
 function App() {
-  const name = 'Matheus'
-
-  function soma(a,b){
-    return a + b
-  }
-  
-  const url = 'https://via.placeholder.com/150'
   return (
     <div className="App">
-      <h2>Alterando o JSX</h2>
-      <p>Olá {name}</p>
-      <p>2 + 2 é: { soma(2,2) }</p>
-      <img src={url}/>
       <HelloWorld/>
+      <hr />
+      <SayMyName name="Guilherme" />
+      <Pessoa nome="Guilherme" profissao="Progamador" foto="https://steamuserimages-a.akamaihd.net/ugc/1455176870695154047/6AE7ADF9C609EB2256F5308EF8D8D0ABB82F986B/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" idade="11"/>
     </div>
   );
 }

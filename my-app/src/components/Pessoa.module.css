@@ -2,17 +2,23 @@
     0% {
         transform: rotate(0deg);
     }
-    20% {
-        transform: rotate(45deg);
+    30% {
+        transform: rotate(25deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: rotate(-25deg);
     }
     100% {
-        transform: rotate(360deg);
+        transform: rotate(0deg);
     }
 }
 
 .foto {
     animation-name: rodar;
-    animation-duration: 2s;
+    animation-duration: 5s;
     animation-delay: 5s;
     animation-iteration-count: infinite;
     width: 250px;
